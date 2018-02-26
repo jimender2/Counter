@@ -49,7 +49,11 @@ public class Counter {
 		//Close scanner
 		scan.close();
 		
-		
+		//Start Output
+		do {
+			System.out.println(number1 + ",");
+			number1 ++;
+		} while(number1 <= number2);
 	}
 
 }
