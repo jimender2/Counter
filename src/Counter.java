@@ -19,7 +19,7 @@ public class Counter {
 		//Prep Scanner
 		Scanner scan = new Scanner(System.in);
 
-		
+		//Get and check first number from the user
 		do {
 			System.out.println("Please enter in the first number");
 			number1 = scan.nextInt();
@@ -31,9 +31,25 @@ public class Counter {
 			}
 		} while (continueOn == false);
 	
+		//Reset continueOn
+		continueOn = false;
 		
+		//Get and check the second number from the user
+		do {
+			System.out.println("Please enter in the second number");
+			number2 = scan.nextInt();
+			if (number2 >= (number1 + 20)) {
+				continueOn = true;
+			} else if(number2 < (number1 + 20)){
+				System.out.println("Try again. The number must be at least"
+						+ " 20 greater than " + number1 + ".");
+			}
+		} while (continueOn == false);
 		
+		//Close scanner
 		scan.close();
+		
+		
 	}
 
 }
