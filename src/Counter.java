@@ -16,6 +16,7 @@ public class Counter {
 			number2;
 		
 		boolean continueOn = false;
+		boolean displayNumber;
 		//Prep Scanner
 		Scanner scan = new Scanner(System.in);
 
@@ -51,8 +52,37 @@ public class Counter {
 		
 		//Start Output
 		do {
-			System.out.println(number1 + ",");
+			
+			//Reset displayNumber
+			displayNumber = true;
+			
+			//Divisible by 3?
+			if ((number1 % 3) == 0){
+				System.out.print("Tri");
+				displayNumber = false;
+			}
+			
+			//Divisible by 5?
+			if ((number1 % 5) == 0){
+				System.out.print("Pente");
+				displayNumber = false;
+			}
+			
+			//Divisible by 7?
+			if ((number1 % 7) == 0){
+				System.out.print("Septi");
+				displayNumber = false;
+			}
+			
+			//Display if not
+			if (displayNumber == true) {
+				System.out.print(number1 + ",");
+			}
+			
+			//Goto next number and make sure I add a new line.
 			number1 ++;
+			System.out.println("");
+			
 		} while(number1 <= number2);
 	}
 
