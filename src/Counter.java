@@ -3,8 +3,11 @@ import java.util.Scanner;
 /**
  * 
  * @author Jonathan Meredith
- * This is a program that does a 
- * I think
+ * This is a program that asks the user for two different numbers. The
+ * second number must be at least 20 more than the first number.  Then
+ * this program outputs all of the different numbers between the first
+ * number to the second number. If the number is divisable by 3, 5, or 7
+ * then it outputs a prefix to it.
  *
  */
 
@@ -80,7 +83,7 @@ public class Counter {
 			
 			//Display if not
 			if (displayNumber == true) {
-				System.out.print(number1 + ",");
+				System.out.print(number1);
 			}
 			
 			//Goto next number and make sure I add a new line.
