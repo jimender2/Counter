@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * 
  * @author Jonathan Meredith
- * This is a program that does a bunch of junk related to a sport called soccer
+ * This is a program that does a 
  * I think
  *
  */
@@ -12,11 +12,14 @@ import java.util.Scanner;
 public class Counter {
 
 	public static void main(String[] args) {
+		//Declare integers
 		int number1,
 			number2;
 		
+		//Declare Boolean
 		boolean continueOn = false;
 		boolean displayNumber;
+		
 		//Prep Scanner
 		Scanner scan = new Scanner(System.in);
 
@@ -30,6 +33,7 @@ public class Counter {
 				System.out.println("Try again. The number must be greater "
 						+ "than 0.");
 			}
+			
 		} while (continueOn == false);
 	
 		//Reset continueOn
